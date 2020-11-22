@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="varmaashik" />
 
-    <title>Contact | Portfolio Website Template | CODEGRID</title>
+    <title>Project | Portfolio Website Template | CODEGRID</title>
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
 
     <!-- bootstrap cdns -->
     <link
@@ -24,30 +24,33 @@
       rel="stylesheet"
     />
 
+    <!-- ionicons cdn -->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
     <!-- for on scroll animations -->
-    <link rel="stylesheet" href="animate.css" />
-    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="../animate.css" />
+    <script src="../wow.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <!--------------- navbar starts here --------------->
       <nav>
         <span id="brand">
-          <a href="index.html">varmaashik</a>
+          <a href="/index.html">varmaashik</a>
         </span>
 
         <ul id="menu">
           <li>
-            <a href="index.html">home<span>.</span></a>
+            <a href="/index.html">home<span>.</span></a>
           </li>
           <li>
-            <a href="work.html">work<span>.</span></a>
+            <a href="/work.html">work<span>.</span></a>
           </li>
           <li>
-            <a href="about.html">about me<span>.</span></a>
+            <a href="/about.html">about me<span>.</span></a>
           </li>
           <li>
-            <a href="contact.html">contact<span>.</span></a>
+            <a href="/contact.html">contact<span>.</span></a>
           </li>
         </ul>
 
@@ -61,16 +64,16 @@
 
         <ul id="menu">
           <li>
-            <a href="index.html">home<span>.</span></a>
+            <a href="/index.html">home<span>.</span></a>
           </li>
           <li>
-            <a href="work.html">work<span>.</span></a>
+            <a href="/work.html">work<span>.</span></a>
           </li>
           <li>
-            <a href="about.html">about me<span>.</span></a>
+            <a href="/about.html">about me<span>.</span></a>
           </li>
           <li>
-            <a href="contact.html">contact<span>.</span></a>
+            <a href="/contact.html">contact<span>.</span></a>
           </li>
         </ul>
       </div>
@@ -79,97 +82,110 @@
 
       <div class="whitespace"></div>
 
-      <!--------------- hero section starts here say hello 👋 --------------->
+      <!--------------- hero section starts here --------------->
       <div class="container">
         <div class="hero-content">
           <br /><br />
-
           <div class="row">
-            <div class="col-lg-8">
-              <h3 class="wow fadeInUp" data-wow-delay="1s">say hello 👋</h3>
+            <div class="col-lg-12">
               <br />
-              <p class="wow fadeInUp" data-wow-delay="1.2s">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
-                accusantium sint quod voluptatem dolorum, quaerat, ut iusto
-                cumque magni ab repudiandae, quasi minus unde temporibus nulla
-                eum eaque! Placeat praesentium sunt suscipit laboriosam deserunt
-                commodi atque corporis, iure maiores dicta, fugit similique.
+
+              <h1 class="wow fadeInUp" data-wow-delay="1s">Flappy Clone</h1>
+              <br /><br />
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <p class="wow fadeInUp" data-wow-delay="1.2s">type :</p>
+                  <h6 class="wow fadeInUp" data-wow-delay="1.3s">Game</h6>
+                </div>
+
+                <div class="col-lg-4">
+                  <p class="wow fadeInUp" data-wow-delay="1.4s">stack :</p>
+                  <h6 class="wow fadeInUp" data-wow-delay="1.5s">p5.js</h6>
+                </div>
+
+                <div class="col-lg-4">
+                  <p class="wow fadeInUp" data-wow-delay="1.6s">completed :</p>
+                  <h6 class="wow fadeInUp" data-wow-delay="1.7s">
+                    15 May 2020
+                  </h6>
+                </div>
+              </div>
+              <br />
+              <p class="wow fadeInUp" data-wow-delay="1.8s">
+                A flappy-bird clone built on p5.js. Score as much as you can
+                manouvering through the gaps between the pipes.
               </p>
+              <!-- Need to put github link over here -->
             </div>
           </div>
         </div>
       </div>
       <!--------------- hero section ends here --------------->
 
-      <!-- <div class="whitespace"></div> -->
+      <!--------------- project image section starts here --------------->
 
-      <!--------------- form section starts here --------------->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-8">
-            <form
-              name="contact-form"
-              id="contact-form"
-              method="post"
-              action="https://formspree.io/xrgywdgp"
-            >
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay="1.4s">
-                  <label for="contact-name">Name :</label>
-                  <div class="textarea">
-                    <input
-                      type="text"
-                      name="contact-name"
-                      id="contact-name"
-                      value=""
-                      required
-                    />
-                  </div>
-                </li>
-
-                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                  <label for="contact-email">Email :</label>
-                  <div class="textarea">
-                    <input
-                      type="email"
-                      name="contact-email"
-                      id="contact-email"
-                      value=""
-                      required
-                    />
-                  </div>
-                </li>
-
-                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                  <label for="contact-project">Message :</label>
-                  <div class="textarea">
-                    <textarea
-                      type="email"
-                      name="contact-project"
-                      id="contact-project"
-                      rows="6"
-                      value=""
-                      required
-                    >
-                    </textarea>
-                  </div>
-                </li>
-              </ul>
-
-              <button
-                type="submit"
-                name="contact-submit"
-                id="contact-submit"
-                class="send wow fadeInUp"
-              >
-                Send Message
-              </button>
-            </form>
+      <div class="project-img">
+        <div class="container">
+          <br /><br />
+          <div class="row">
+            <div class="col-md-8">
+              <div
+                class="project project__img project1__img wow fadeInUp desktop__img"
+                data-wow-delay="0.8s"
+              ></div>
+              <h1 class="rev-block" id="view-project-link">
+                <span
+                  ><a href="https://new-flappy.netlify.app/" target="_blank"
+                    >View Project</a
+                  ></span
+                >
+              </h1>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="project project__img project1__img__mobile wow fadeInUp mobile__img"
+                data-wow-delay="0.8s"
+              ></div>
+              <h1 class="rev-block" id="view-github-link">
+                <span
+                  ><a
+                    href="https://www.github.com/ashikvarma11/flappy_bird"
+                    target="_blank"
+                    >View Github</a
+                  ></span
+                >
+              </h1>
+            </div>
           </div>
         </div>
       </div>
 
-      <!--------------- form section ends here --------------->
+      <!--------------- project image section ends here --------------->
+
+      <br /><br />
+
+      <!--------------- project nav starts here --------------->
+
+      <div class="project-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 prev">
+              <p><ion-icon name="arrow-back"></ion-icon>previous</p>
+            </div>
+
+            <!-- <div class="circle" class="col-lg-4"><a href="https://new-flappy.netlify.app/" target="!_blank">View Project</a>
+                                    <a href="https://www.github.com/ashikvarma11/flappy_bird" target="_blank">View Github</a></div> -->
+            <div class="col-lg-6 next">
+              <p onclick="location.href='project2.html'">
+                next<ion-icon name="arrow-forward"></ion-icon>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------- project nav starts here --------------->
 
       <div class="whitespace"></div>
 
@@ -229,6 +245,7 @@
           </div>
         </div>
       </div>
+
       <!--------------- footer ends here --------------->
 
       <br /><br /><br /><br />
