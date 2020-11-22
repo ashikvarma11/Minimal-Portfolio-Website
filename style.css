@@ -377,6 +377,156 @@ h6 {
       bottom: 0;
 }
 
+.project1__img {
+      background: url('./images/flappy.png') no-repeat 50% 50%;
+    
+}
+.project1__img__mobile {
+      background: url('./images/flappy-logo.png') no-repeat 50% 50%;
+      background-size: cover;
+}
+.project2__img {
+      background: url('./images/chat-farm.png') no-repeat 50% 50%;
+    
+}
+.project2__img__mobile {
+      background: url('./images/chat-farm-logo.png') no-repeat 50% 50%;
+      background-size: cover;
+}
+.project3__img{
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('./images/snake-game.png') no-repeat 50% 50%;
+    
+}
+.project4__img {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('./images/flappy.png') no-repeat 50% 50%;
+    
+}
+.project5__img {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('./images/flappy.png') no-repeat 50% 50%;
+    
+}
+.project1__img ,.project2__img ,.project3__img,.project4__img ,.project5__img  {
+      background-size: cover;
+      background-position: center left;
+}
+
+.desktop__img {
+      background-size: contain;
+}
+.mobile__img {
+      /* background-size: contain; */
+      /* filter: grayscale(100%); */
+}
+
+.grayscale {
+      filter: grayscale(100%);
+}
+
+.circle:hover>a {
+      display: block;
+      transition: opacity 1s;
+}
+
+#view-project-link {
+      position:absolute;
+      top:50%;
+      transform:translate(-50%,-50%);
+      width:20rem;
+      left:calc(width/2);
+}
+
+#view-github-link {
+      position:absolute;
+      top:50%;
+      transform:translate(-50%,-50%);
+      width:20rem;
+      left:calc(width/2);
+}
+
+.rev-block {
+      position:absolute;
+      mix-blend-mode: difference;
+}
+.rev-block span {
+      opacity: 0;
+      font-size: 2rem;
+      border: none;
+      transition:  1s ease-in-out linear;
+}
+.project__img:hover,.project__img__mobile:hover {
+      filter: grayscale(100%);
+      transition: 0.5s ease-out linear;
+      -webkit-transition: 1s -webkit-filter linear;
+      -moz-transition: 1s -moz-filter linear;
+      -ms-transition: 1s -ms-filter linear;
+      -o-transition: 1s -o-filter linear;
+      cursor:pointer;
+      
+}
+
+.project__img:hover + .rev-block span,.project__img__mobile:hover + .rev-block span {
+      opacity: 0;
+      animation: appear-text 0.0001s linear forwards;
+      animation-delay: 1.4s;
+}
+
+
+.project__img:hover + .rev-block:after,.project__img__mobile:hover + .rev-block:after {
+      content:'';
+      top:0;
+      left:0;
+      position: absolute;
+      width: 0%;
+      height:100%;
+      background: #fff;
+      animation: rev-block  1.5s cubic-bezier(0.19, 1, 0.22, 1 ) forwards;
+      animation-delay: 1s;
+}
+
+.rev-block:hover span {
+      opacity: 1;
+      background-color: #232323;
+      padding:1rem;
+}
+.rev-block span:hover {
+      opacity: 1;
+      cursor: pointer;
+      background-color: #232323;
+      /* transition: 0.5s linear; */
+      padding:1rem;
+      
+}
+.rev-block span a {
+      text-decoration: none;
+      color: inherit;
+}
+
+
+
+@keyframes rev-block {
+      0% {
+            left: 0;
+            width:0%;
+      }
+      50% {
+            left: 0;
+            width:100%;
+      }
+      100% {
+            left: 100%;
+            width:0%;
+      }
+}
+
+@keyframes appear-text {
+      0% {
+            opacity: 0;
+      }
+      100% {
+            opacity: 1;
+      }
+}
+
 @media(max-width: 768px) {
       .project {
             width: 90% !important;
@@ -389,6 +539,16 @@ h6 {
 
       .project1::after, .project2::after, .project3::after, .project4::after {
             display: none;
+      }
+
+      .rev-block {
+            left:56%;
+            top:10% !important;
+      }
+      .rev-block span {
+            
+            background-color: #000;
+            padding:1rem;
       }
 }
 
@@ -612,8 +772,10 @@ textarea:focus {
 
 .prev p {
       text-align: left;
+      cursor: pointer;
 }
 
 .next p {
       text-align: right;
+      cursor: pointer;
 }
