@@ -757,6 +757,10 @@ textarea:focus {
       color: #101010;
 }
 
+#coffee-emoji {
+      font-size: 2rem;
+}
+
 @media(max-width: 768px) {
       #contact-form {
             margin: 5% -8%;
